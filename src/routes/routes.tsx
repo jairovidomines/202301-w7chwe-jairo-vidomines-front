@@ -6,7 +6,7 @@ export const routes = [
   {
     path: "/",
     element: <App />,
-    children: [{ path: "login", element: <LoginPage /> }],
+    children: [{ path: "/", element: <LoginPage /> }],
   },
 ];
 

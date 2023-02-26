@@ -13,7 +13,10 @@ describe("Given a App component", () => {
 
       const title = "Social App";
 
-      const expectedTitle = screen.getByRole("heading", { name: title });
+      const expectedTitle = screen.getByRole("heading", {
+        level: 1,
+        name: title,
+      });
 
       expect(expectedTitle).toBeInTheDocument();
     });
