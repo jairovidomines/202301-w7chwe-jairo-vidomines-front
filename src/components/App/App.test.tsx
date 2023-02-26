@@ -1,21 +1,19 @@
 import { render, screen } from "@testing-library/react";
 import Wrapper from "../../mocks/Wrapper";
-import GlobalStyles from "../../styles/GlobalStyles";
-import Layout from "./Layout";
+import App from "./App";
 
-describe("Given a Layout component", () => {
+describe("Given a App component", () => {
   describe("When it is rendered", () => {
-    test("Then it should show the title 'Social App'", () => {
+    test("Then it should show a heading of level 1 with the title 'Social App'", () => {
       render(
         <Wrapper>
-          <GlobalStyles />
-          <Layout />
+          <App />
         </Wrapper>
       );
 
       const title = "Social App";
 
-      const expectedTitle = screen.getByText(title);
+      const expectedTitle = screen.getByRole("heading", { name: title });
 
       expect(expectedTitle).toBeInTheDocument();
     });
