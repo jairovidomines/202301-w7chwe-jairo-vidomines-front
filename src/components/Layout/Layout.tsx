@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import LoginForm from "../LoginForm/LoginForm";
 import LayoutStyled from "./LayoutStyled";
 
 const Layout = (): JSX.Element => {
@@ -7,7 +6,6 @@ const Layout = (): JSX.Element => {
     <LayoutStyled>
       <h1>Social App</h1>
       <Outlet />
-      <LoginForm />
     </LayoutStyled>
   );
 };
