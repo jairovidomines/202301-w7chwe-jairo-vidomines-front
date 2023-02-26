@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 const LoginFormstyled = styled.form`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 15px;
   align-items: center;
-  width: 400px;
+  width: 300px;
   height: 350px;
   border-radius: 8px;
   box-shadow: 0 0 5px 5px #eae8e8;
