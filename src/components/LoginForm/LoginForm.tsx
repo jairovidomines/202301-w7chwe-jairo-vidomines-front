@@ -43,8 +43,6 @@ const LoginForm = (): JSX.Element => {
           onChange={handleUsername}
           value={username}
         ></input>
-      </div>
-      <div>
         <label className="form__label" htmlFor="password">
           Password
         </label>
